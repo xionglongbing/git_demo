@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>福尔摩斯探案集</title>
+<style>
+li a {
+    display: block;
+    color: blue;
+    padding: 8px 16px;
+    text-decoration: underline;
+}
+li a:hover {
+    background-color: pink;
+    color: black;
+}
+.shape{
+                 margin:10px auto;
+	width:230px;
+	height:150px;
+	background-color:lightgreen;
+                 list-style:none; }
+.shape{background-color: lightblue}
+.p{font:16px/1.5"楷体";text-indent:2em;}
+.a{background-color: pink;}
+.b{
+    background-color: lightgreen;
+    width: 1200px;
+    border: 25px solid grey;
+    padding: 25px;
+    margin: 25px;
+}
+.p{font:16px/1.5"楷体";text-indent:2em;}
+</style>
+</head>
+<body>
+<div class="a">
+<ul class='shape'>
+<li><a href="file:///F:/HTML项目/实验4/好书推荐.html">首页问候</a></li>
+<li><a href="file:///F:/HTML项目/实验4/拿破仑传.html">《拿破仑传》</a></li>
+<li><a href="file:///F:/HTML项目/实验4/福尔摩斯探案集.html">《福尔摩斯探案集》</a></li>
+</ul>
+<div class="b">
+<p>点击这个按钮,获得基于时间的问候。</p>
+<button onclick="myFunction()">点击这里</button>
+<p id="demo"></p>
+<script>
+function myFunction(){
+	var x="";
+	var time=new Date().getHours();
+	if (time<20){
+	 	x="Good day" ;
+     }
+	else{
+ 		x="Good evening";
+ 	}
+	document.getElementById("demo").innerHTML=x;
+}
+</script>
+<div align="center">
+<img width="200" src="福尔摩斯.jpg"></div>
+<p class="p">《福尔摩斯探案全集》被称为侦探小说中的“圣经”，一百多年来被译成57种文字，畅销世界各地。福尔摩斯更是成了名侦探的代名词，他与华生的搭档组合，以及“神探”的典型等，都对后世的侦探小说有着极其深远的影响。英国著名小说家毛姆曾说：“<span style="color:red">和柯南道尔所写的《福尔摩斯探案全集》相比，没有任何侦探小说曾享有那么大的声誉</span>"。</p>
+<p class="p">而故事的主角福尔摩斯虽然性格让人不可捉摸，他喜欢听人夸赞，对女性比较反感，曾经在《四签名》中被华生评价为“在调查过程中如机器一样冷酷无情”，但在《临终的侦探》中却又表现出他对华生深厚的友情与信任，当华生要触碰那个暗藏毒针的象牙盒子时，他发疯似地怒吼阻止，紧接着又恢复平常的状态，这样一点点似有若无的情感流露使的个性变的更复杂。</p>
+<p class="p">而书中最大的反派莫里亚蒂，他控制着伦敦所有的罪恶，而表面上却又一副道貌岸然的教授模样，受人尊敬，这也可以说是柯南道尔也是作者对当时社会以及政府的控诉。他通过对《恐怖谷》中道格拉斯的悲惨遭遇的描写，让广大读者对他们的际遇抱以深深的同情，也让读者对莫里亚蒂一伙儿的恶行充满愤怒，更重要的是，让现实生活中的种种不公在人们心里浮现，引起共鸣。</P>
+</div>
+<footer>制作：</footer>
+<address>Power by 熊龙兵 版权所有&copy; 2018-2019</address>
+</div>
+</body>
+</html>
